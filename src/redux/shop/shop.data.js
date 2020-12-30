@@ -1,246 +1,578 @@
 const SHOP_DATA = {
-  hats: {
+  groceries: {
     id: 1,
-    title: 'Hats',
-    routeName: 'hats',
+    title: 'Groceries',
+    routeName: 'groceries',
     items: [
       {
         id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25
+        name: 'Olive Oil',
+        imageUrl: 'https://i.ibb.co/r29kg9r/olive-oil.jpg',
+        price: 3
       },
       {
         id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18
+        name: 'Vegetable Oil',
+        imageUrl: 'https://i.ibb.co/djZCwS4/123-oil.webp',
+        price: 1.5
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35
+        name: 'Botanera',
+        imageUrl: 'https://i.ibb.co/wwc9ydN/botanera.jpg',
+        price: 2
       },
       {
         id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25
+        name: 'Catsup',
+        imageUrl: 'https://i.ibb.co/bBh4Ly6/catsup.jpg',
+        price: 1.4
       },
       {
         id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18
+        name: 'Mayonesa',
+        imageUrl: 'https://i.ibb.co/CnxGVby/mayonesa.webp',
+        price: 3
       },
       {
         id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14
+        name: 'Chocolate Abuelita',
+        imageUrl: 'https://i.ibb.co/09kGgm9/chocolate-Abuelita.jpg',
+        price: 3.5
       },
       {
         id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18
+        name: 'Mole',
+        imageUrl: 'https://i.ibb.co/09zZf1h/mole.jpg',
+        price: 2.5
       },
       {
         id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14
+        name: 'Nesquik',
+        imageUrl: 'https://i.ibb.co/4m5kd8S/neskuik.jpg',
+        price: 2
       },
       {
         id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16
+        name: 'La Fina',
+        imageUrl: 'https://i.ibb.co/fXRHQs1/laFina.webp',
+        price: 4
       }
     ]
   },
-  sneakers: {
+  fruitsvegetables: {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title: 'Fruits & Vegetables',
+    routeName: 'fruitsvegetables',
     items: [
       {
         id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220
+        name: 'Chiles Marron',
+        imageUrl: 'https://i.ibb.co/zn6v15Z/chilesmarron.jpg',
+        price: 5
       },
       {
         id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 280
+        name: 'Sweet Potatoes',
+        imageUrl: 'https://i.ibb.co/rsVMmzy/sweetpotatoes.jpg',
+        price: 2.5
       },
       {
         id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 110
+        name: 'Onion',
+        imageUrl: 'https://i.ibb.co/fYhhn7M/onio.jpg',
+        price: 1.75
       },
       {
         id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 160
+        name: 'Brocoli',
+        imageUrl: 'https://i.ibb.co/271jjss/brocoli.jpg',
+        price: 3
       },
       {
         id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 160
+        name: 'Cauliflower',
+        imageUrl: 'https://i.ibb.co/Lz4CwFR/coliflor.png',
+        price: 4
       },
       {
         id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-        price: 160
+        name: 'Spinach',
+        imageUrl: 'https://i.ibb.co/rK9kvQ7/spinach.webp',
+        price: 4.5
       },
       {
         id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190
+        name: 'Red Apples',
+        imageUrl: 'https://i.ibb.co/PM3nkKg/apples.jpg.png',
+        price: 2.5
       },
       {
         id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 200
+        name: 'Green Apples',
+        imageUrl: 'https://i.ibb.co/h9VLXDM/greenaples.jpg',
+        price: 2.5
       }
     ]
   },
-  jackets: {
+  canned: {
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Canned',
+    routeName: 'canned',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125
+        name: 'Black beans',
+        imageUrl: 'https://i.ibb.co/CKbWz0Q/beans.jpg',
+        price: 1.25
       },
       {
         id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90
+        name: 'Corn',
+        imageUrl: 'https://i.ibb.co/09SJngR/corn.jpg',
+        price: 2
       },
       {
         id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-        price: 90
+        name: 'Tuna',
+        imageUrl: 'https://i.ibb.co/Xzkfp5C/tuna.jpg',
+        price: 1.5
       },
       {
         id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-        price: 165
+        name: 'Mix Vegetables',
+        imageUrl: 'https://i.ibb.co/HNCnPC9/mixvegetables.jpg',
+        price: 1.75
       },
       {
         id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-        price: 185
+        name: 'Jalapenos',
+        imageUrl: 'https://i.ibb.co/1T0zZw7/jalapenos.jpg',
+        price: 2.5
       }
     ]
   },
-  womens: {
+  dairyproducts: {
     id: 4,
-    title: 'Womens',
-    routeName: 'womens',
+    title: 'Dairy Products',
+    routeName: 'dairyproducts',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-        price: 25
+        name: 'Condensed Milk',
+        imageUrl: 'https://i.ibb.co/2q2Mjx8/condensedmilk.jpg',
+        price: 1.9
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-        price: 20
+        name: 'Milk',
+        imageUrl: 'https://i.ibb.co/TczwQHm/Lactose-FRee.jpg',
+        price: 1.25
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-        price: 80
+        name: 'Nido Milk',
+        imageUrl: 'https://i.ibb.co/TcnWhRs/nido.jpg',
+        price: 6
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-        price: 80
+        name: 'Margarine',
+        imageUrl: 'https://i.ibb.co/dbrdsGW/margarine.png',
+        price: 1.5
       },
       {
         id: 27,
-        name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-        price: 45
+        name: 'Yoghurt',
+        imageUrl: 'https://i.ibb.co/HKw0B71/yoghurt.jpg',
+        price: .75
       },
       {
         id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        price: 135
+        name: 'American Cheese',
+        imageUrl: 'https://i.ibb.co/bsTdNn1/cheese.jpg',
+        price: 1.5
       },
       {
         id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20
+        name: 'Carnation Milk',
+        imageUrl: 'https://i.ibb.co/dBFtppw/carnationpolvo.jpg',
+        price: 2
       }
     ]
   },
-  mens: {
+  snacks: {
     id: 5,
-    title: 'Mens',
-    routeName: 'mens',
+    title: 'Snacks',
+    routeName: 'snacks',
     items: [
       {
         id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-        price: 325
+        name: 'Cheetos',
+        imageUrl: 'https://i.ibb.co/sKpzjJh/cheetos.jpg',
+        price: 1
       },
       {
         id: 31,
-        name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-        price: 20
+        name: 'Doritos',
+        imageUrl: 'https://i.ibb.co/2ShzfGm/doritos.jpg',
+        price: 1
       },
       {
         id: 32,
-        name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-        price: 25
+        name: 'Ruffles',
+        imageUrl: 'https://i.ibb.co/w6vWpJw/ruffles.jpg',
+        price: 1
       },
       {
         id: 33,
-        name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-        price: 25
+        name: 'Sabritas',
+        imageUrl: 'https://i.ibb.co/7jdYGnT/sabritas.jpg',
+        price: 1
       },
       {
         id: 34,
-        name: 'Jean Long Sleeve',
-        imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-        price: 40
+        name: 'Adobadas',
+        imageUrl: 'https://i.ibb.co/xgFjxxF/Adobadas.jpg',
+        price: 1
       },
       {
         id: 35,
-        name: 'Burgundy T-shirt',
-        imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-        price: 25
+        name: 'Japoneses',
+        imageUrl: 'https://i.ibb.co/k6kkf16/japoneses.jpg',
+        price: 1
+      }
+    ]
+  },
+  flours: {
+    id: 6,
+    title: 'Flours',
+    routeName: 'flours',
+    items: [
+      {
+        id: 36,
+        name: 'Pan Molido',
+        imageUrl: 'https://i.ibb.co/G7cx1W0/panmolido.jpg',
+        price: 2
+      },
+      {
+        id: 37,
+        name: 'Doraditas',
+        imageUrl: 'https://i.ibb.co/f4SJ2QZ/Doraditas.jpg',
+        price: 2
+      },
+      {
+        id: 38,
+        name: 'Mantecadas',
+        imageUrl: 'https://i.ibb.co/Vgry48L/mantecadas.jpg',
+        price: 2
+      },
+      {
+        id: 39,
+        name: 'Bimbunuelos',
+        imageUrl: 'https://i.ibb.co/1dZtz03/bimbunuelos.jpg',
+        price: 2
+      },
+      {
+        id: 40,
+        name: 'Pan tostado',
+        imageUrl: 'https://i.ibb.co/mG6j8t0/Tostado.png',
+        price: 2
+      },
+      {
+        id: 41,
+        name: 'Tortillinas',
+        imageUrl: 'https://i.ibb.co/ZH4VYGC/tortillinas.jpg',
+        price: 2
+      }
+    ]
+  },
+  confectionery: {
+    id: 7,
+    title: 'Confectionery',
+    routeName: 'confectionery',
+    items: [
+      {
+        id: 42,
+        name: 'Panditas',
+        imageUrl: 'https://i.ibb.co/V9dM7rr/panditas.jpg',
+        price: 1
+      },
+      {
+        id: 43,
+        name: 'skittles',
+        imageUrl: 'https://i.ibb.co/nn2HVHL/skittles.jpg',
+        price: 2.3
+      },
+      {
+        id: 44,
+        name: 'Duvalin',
+        imageUrl: 'https://i.ibb.co/hY4FPnY/duvalin.jpg',
+        price: 1
+      },
+      {
+        id: 45,
+        name: 'Paleta Payaso',
+        imageUrl: 'https://i.ibb.co/PZvwqqL/paleta.jpg',
+        price: 2
+      },
+      {
+        id: 46,
+        name: 'Pulparindo',
+        imageUrl: 'https://i.ibb.co/4fRp0H5/pulparindo.jpg',
+        price: 3
+      },
+      {
+        id: 47,
+        name: 'Mazapan',
+        imageUrl: 'https://i.ibb.co/565bfkY/mazapan.jpg',
+        price: 2.5
+      }
+    ]
+  },
+  drinks:{
+    id: 8,
+    title: 'Drinks',
+    routeName: 'drinks',
+    items: [
+      {
+        id: 48,
+        name: 'Coca Cola',
+        imageUrl: 'https://i.ibb.co/rsJtFt1/cocacola.webp',
+        price: 2.5
+      },
+      {
+        id: 49,
+        name: 'Fanta',
+        imageUrl: 'https://i.ibb.co/c1FbNdT/fanta.jpg',
+        price: 2.5
+      },
+      {
+        id: 50,
+        name: 'Jarrito',
+        imageUrl: 'https://i.ibb.co/NTg66PH/jarritos.jpg',
+        price: 2.5
+      },
+      {
+        id: 51,
+        name: 'Pepsi Cola',
+        imageUrl: 'https://i.ibb.co/pr40mXG/pepsi.webp',
+        price: 2.5
+      },
+      {
+        id: 52,
+        name: 'Sprite',
+        imageUrl: 'https://i.ibb.co/x1z5Dwf/sprite.webp',
+        price: 2.5
+      },
+      {
+        id: 53,
+        name: 'Mundet',
+        imageUrl: 'https://i.ibb.co/fM0YKQH/mundet-500-1.jpg',
+        price: 2.5
+      }
+    ]
+  },
+  meatsandsausage: {
+    id: 9,
+    title: 'Meats & Sausage',
+    routeName: 'meatsandsausage',
+    items: [
+      {
+        id: 54,
+        name: 'Hot Dog',
+        imageUrl: 'https://i.ibb.co/HKRVbjY/salchicha.jpg',
+        price: 4
+      },
+      {
+        id: 55,
+        name: 'Bacon',
+        imageUrl: 'https://i.ibb.co/7NsnB0p/tocino.jpg',
+        price: 3.5
+      },
+      {
+        id: 56,
+        name: 'Turkey Ham',
+        imageUrl: 'https://i.ibb.co/0FP0yLd/jamon.jpg',
+        price: 4
+      },
+      {
+        id: 57,
+        name: 'Ham',
+        imageUrl: 'https://i.ibb.co/ZVVhFbn/ham.jpg',
+        price: 4
+      },
+      {
+        id: 58,
+        name: 'Mortadela',
+        imageUrl: 'https://i.ibb.co/H4d1qV2/mortadela.jpg',
+        price: 5
+      },
+      {
+        id: 59,
+        name: 'Salame',
+        imageUrl: 'https://i.ibb.co/vPhqFCf/Salame.jpg',
+        price: 7
+      }
+    ]
+  },
+  personalhygiene: {
+    id: 10,
+    title: 'Personal Hygiene',
+    routeName: 'personalhygiene',
+    items: [
+      {
+        id: 60,
+        name: 'Baby Oil',
+        imageUrl: 'https://i.ibb.co/KGzWVDb/babyoil.jpg',
+        price: 3
+      },
+      {
+        id: 61,
+        name: 'Cotton',
+        imageUrl: 'https://i.ibb.co/4T6z8qQ/algodon.jpg',
+        price: 4
+      },
+      {
+        id: 62,
+        name: 'Toallitas',
+        imageUrl: 'https://i.ibb.co/2jgGQ6g/toallitas.jpg',
+        price: 6
+      },
+      {
+        id: 63,
+        name: 'Saba',
+        imageUrl: 'https://i.ibb.co/R94hHnb/sava.jpg',
+        price: 3.5
+      },
+      {
+        id: 64,
+        name: 'Suave',
+        imageUrl: 'https://i.ibb.co/dtYqNsR/suave.jpg',
+        price: 5
+      },
+      {
+        id: 65,
+        name: 'Cepillo de dientes',
+        imageUrl: 'https://i.ibb.co/m4LMVrF/cepillo.png',
+        price: 2
+      }
+    ]
+  },
+  cleaningproducts: {
+    id: 11,
+    title: 'Cleaning Products',
+    routeName: 'cleaningproducts',
+    items: [
+      {
+        id: 66,
+        name: 'Javon Liquido',
+        imageUrl: 'https://i.ibb.co/Br7s24Q/javon-Liquido.jpg',
+        price: 5
+      },
+      {
+        id: 67,
+        name: 'Clorox',
+        imageUrl: 'https://i.ibb.co/y84s23H/clorox.jpg',
+        price: 4
+      },
+      {
+        id: 68,
+        name: 'Lysol',
+        imageUrl: 'https://i.ibb.co/dGJQV40/lysol.jpg',
+        price: 5
+      },
+      {
+        id: 69,
+        name: 'downy',
+        imageUrl: 'https://i.ibb.co/gvgLj82/downy.jpg',
+        price: 4.5
+      },
+      {
+        id: 70,
+        name: 'Axion',
+        imageUrl: 'https://i.ibb.co/XD3msVh/axion.webp',
+        price: 4
+      },
+      {
+        id: 71,
+        name: 'Bicarbonato',
+        imageUrl: 'https://i.ibb.co/D7hx21h/bicarbonato.jpg',
+        price: 3
+      }
+    ]
+  },
+  domesticuse: {
+    id: 12,
+    title: 'Domestic Use',
+    routeName: 'domesticuse',
+    items: [
+      {
+        id: 72,
+        name: 'Vasos de Plastico',
+        imageUrl: 'https://i.ibb.co/cFDS3zn/vasos.jpg',
+        price: 4
+      },
+      {
+        id: 73,
+        name: 'Popotes',
+        imageUrl: 'https://i.ibb.co/vBB7Vj7/popotes.jpg',
+        price: 5
+      },
+      {
+        id: 74,
+        name: 'Platos Desechables',
+        imageUrl: 'https://i.ibb.co/tJBDGCF/plasticplates.jpg',
+        price: 4
+      },
+      {
+        id: 75,
+        name: 'Rope',
+        imageUrl: 'https://i.ibb.co/8D9xJKD/rope.jpg',
+        price: 3
+      },
+      {
+        id: 76,
+        name: 'Mata Moscas',
+        imageUrl: 'https://i.ibb.co/PNN7v86/flyswatter.jpg',
+        price: 2
+      },
+      {
+        id: 77,
+        name: 'Rcogedor',
+        imageUrl: 'https://i.ibb.co/DtjcgLx/recogedor.png',
+        price: 3
+      }
+    ]
+  },
+  others: {
+    id: 13,
+    title: 'Others',
+    routeName: 'others',
+    items: [
+      {
+        id: 78,
+        name: 'Phone Cards',
+        imageUrl: 'https://i.ibb.co/sFWDvFp/Cards.png',
+        price: 10 
+      },
+      {
+        id: 79,
+        name: 'Movil Recharges',
+        imageUrl: 'https://i.ibb.co/qRDNCTw/recharges.jpg',
+        price: 20
+      },
+      {
+        id: 80,
+        name: 'Ice',
+        imageUrl: 'https://i.ibb.co/nzLy2Sd/ice.webp',
+        price: 4
+      },
+      {
+        id: 81,
+        name: 'Marlboro',
+        imageUrl: 'https://i.ibb.co/3CSDQ8Y/marlboro.jpg',
+        price: 9
       }
     ]
   }
